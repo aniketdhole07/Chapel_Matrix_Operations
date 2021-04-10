@@ -3,7 +3,7 @@ use Time;
 use LinearAlgebra;
 config var n: int =10;  //Used to CHange value of n
 
-//Sum with traditional addition method
+//Dot Product with traditional dot product method using sum of product of rows and columns
 proc dotproduct_without_library(mat1: [1..n][1..n] int,mat2: [1..n][1..n] int) 
 {
   var ans:[1..n][1..n] int;
@@ -16,7 +16,7 @@ proc dotproduct_without_library(mat1: [1..n][1..n] int,mat2: [1..n][1..n] int)
   }
 }
 
-//Sum using LinearAlgebra Library
+//Dot Product using LinearAlgebra Library's dot Function
 proc dotproduct_with_library(matrix1: [1..n, 1..n] int,matrix2: [1..n, 1..n] int) 
 {
     var ans= dot(matrix1,matrix2);
